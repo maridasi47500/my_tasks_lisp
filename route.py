@@ -129,7 +129,7 @@ class Route():
     def pythonrecipe(self,params={}):
         myparam=self.get_post_data()(params=("script_id",))
         script=self.db.Script.getbyid(myparam["script_id"])
-        filename=Chaine().fichier("examplename.cl")
+        filename=Chaine().fichier("examplename.scm")
         hello=Fichier("./uploads",filename).ecrire(script["content"])
         wow=Scriptpython(filename)
         a=wow.lancer1()

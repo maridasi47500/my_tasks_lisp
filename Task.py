@@ -16,6 +16,7 @@ welcome+="<div class=\"home\">"
 welcome+="<h2>"+directory1+"</h2>"
 title=""
 content=""
+define=""
 welcome1=""
 paspremier=False
 # that directory
@@ -31,6 +32,7 @@ for filename in os.listdir(directory1+'/'):
         content=""
         script=""
         welcome1=""
+        define=""
         paspremier=False
         for y in Fichier(f[0:x],nfile).lire().split("\n"):
             if "(" not in y and y.strip() != "" and "==>" not in y and y.strip() != ";" and ")" not in y and "Chapter" not in y and "See" not in y and "-----------" not in y:
@@ -38,7 +40,9 @@ for filename in os.listdir(directory1+'/'):
                 welcome1=""
 
             elif y.strip() == "" and welcome1 == "":
-                k=dbScript.create({"name":name,"file":f,"title":title,"content":content})
+                k=dbScript.create({"name":name,"file":f,"title":title,"content":define+content})
+                if "define" in content:
+                    define+=content
                 welcome1="\n<a id=\"monscript"+str(k["script_id"])+"\" href=\"/script/"+str(k["script_id"])+"\">"+title+"</a>"
                 welcome+=welcome1
                 content=""
@@ -46,6 +50,7 @@ for filename in os.listdir(directory1+'/'):
                 if paspremier:
                     content+="\n"
                 content+=y
+                
                 paspremier=True
 
 

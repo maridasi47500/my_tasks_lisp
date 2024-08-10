@@ -1,423 +1,423 @@
 <h1>Become 1 programmer</h1><div class="home"><h2>./the-little-schemer</h2>
-<a id="monscript1736" href="/script/1736"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript1737" href="/script/1737"></a>
-<a id="monscript1738" href="/script/1738"> lat? function finds if all the elements in the list are atoms</a>
-<a id="monscript1739" href="/script/1739"> Examples of lats:</a>
-<a id="monscript1740" href="/script/1740"> Examples of not-lats:</a>
-<a id="monscript1741" href="/script/1741"> Examples of or:</a>
-<a id="monscript1742" href="/script/1742"></a>
-<a id="monscript1743" href="/script/1743"> Examples of member? succeeding</a>
-<a id="monscript1744" href="/script/1744"> Examples of member? failing</a>
-<a id="monscript1745" href="/script/1745"></a>
-<a id="monscript1746" href="/script/1746"> http://www.catonmat.net</a>
-<a id="monscript1747" href="/script/1747"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript1748" href="/script/1748">'*abc$</a>
-<a id="monscript1749" href="/script/1749">'xyz</a>
-<a id="monscript1750" href="/script/1750"> Example of not-lists</a>
-<a id="monscript1751" href="/script/1751"> Example of not-atoms</a>
-<a id="monscript1752" href="/script/1752"> Examples of car</a>
-<a id="monscript1753" href="/script/1753"> Examples of not-applicable car</a>
-<a id="monscript1754" href="/script/1754"></a>
-<a id="monscript1755" href="/script/1755"> More examples of car</a>
-<a id="monscript1756" href="/script/1756"> Examples of cdr</a>
-<a id="monscript1757" href="/script/1757"> Examples of not-applicable cdr</a>
-<a id="monscript1758" href="/script/1758"></a>
-<a id="monscript1759" href="/script/1759"> Examples of car and cdr</a>
-<a id="monscript1760" href="/script/1760"> Examples of cons</a>
-<a id="monscript1761" href="/script/1761"> Examples of not-applicable cons</a>
-<a id="monscript1762" href="/script/1762"></a>
-<a id="monscript1763" href="/script/1763"> Examples of cons, car and cdr</a>
-<a id="monscript1764" href="/script/1764"> Example of the null-list</a>
-<a id="monscript1765" href="/script/1765"> Examples of null?</a>
-<a id="monscript1766" href="/script/1766"> Example of not-applicable null?</a>
-<a id="monscript1767" href="/script/1767"></a>
-<a id="monscript1768" href="/script/1768"> We first need to define atom? for Scheme as it's not a primitive</a>
-<a id="monscript1769" href="/script/1769"> Examples of atom?</a>
-<a id="monscript1770" href="/script/1770"> Examples of atom?, car and cdr</a>
-<a id="monscript1771" href="/script/1771"> Examples of eq?</a>
-<a id="monscript1772" href="/script/1772"> Example of not-applicable eq?</a>
-<a id="monscript1773" href="/script/1773"></a>
-<a id="monscript1774" href="/script/1774"> Examples of eq?, car and cdr</a>
-<a id="monscript1775" href="/script/1775"> Examples of not-applicable eq?, car and cdr</a>
-<a id="monscript1776" href="/script/1776"></a>
-<a id="monscript1777" href="/script/1777"> http://www.catonmat.net</a>
-<a id="monscript1778" href="/script/1778"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript1779" href="/script/1779"> The atom? primitive</a>
-<a id="monscript1780" href="/script/1780"> The add1 primitive</a>
-<a id="monscript1781" href="/script/1781"> The rember* function removes all matching atoms from an s-expression</a>
-<a id="monscript1782" href="/script/1782">  'cup</a>
-<a id="monscript1783" href="/script/1783">  'sauce</a>
-<a id="monscript1784" href="/script/1784"> The insertR* function insers new to the right of all olds in l</a>
-<a id="monscript1785" href="/script/1785">  'chuck</a>
-<a id="monscript1786" href="/script/1786"></a>
-<a id="monscript1787" href="/script/1787"></a>
-<a id="monscript1788" href="/script/1788"> The occur* function counts the number of occurances of an atom in l</a>
-<a id="monscript1789" href="/script/1789">  'banana</a>
-<a id="monscript1790" href="/script/1790"> The subst* function substitutes all olds for news in l</a>
-<a id="monscript1791" href="/script/1791">  'banana</a>
-<a id="monscript1792" href="/script/1792"> The insertL* function insers new to the left of all olds in l</a>
-<a id="monscript1793" href="/script/1793">  'chuck</a>
-<a id="monscript1794" href="/script/1794"> The member* function determines if element is in a list l of s-exps</a>
-<a id="monscript1795" href="/script/1795">  'chips</a>
-<a id="monscript1796" href="/script/1796"> of S-expressions that doesn't contain the empty list</a>
-<a id="monscript1797" href="/script/1797"> Examples of leftmost</a>
-<a id="monscript1798" href="/script/1798"> Examples of not-applicable leftmost</a>
-<a id="monscript1799" href="/script/1799"> Or expressed via cond</a>
-<a id="monscript1800" href="/script/1800"> And expressed via cond</a>
-<a id="monscript1801" href="/script/1801">       case 3: l1 is a list, l2 is empty, atom, list</a>
-<a id="monscript1802" href="/script/1802"> Example of eqlist?</a>
-<a id="monscript1803" href="/script/1803">       case 3: l1 is a list, l2 is empty, atom, list</a>
-<a id="monscript1804" href="/script/1804"> Tests of eqlist2?</a>
-<a id="monscript1805" href="/script/1805"> The equal? function determines if two s-expressions are equal</a>
-<a id="monscript1806" href="/script/1806"> Examples of equal??</a>
-<a id="monscript1807" href="/script/1807"> equal? simplified</a>
-<a id="monscript1808" href="/script/1808"> Tests of equal2??</a>
-<a id="monscript1809" href="/script/1809"> eqlist? rewritten using equal2??</a>
-<a id="monscript1810" href="/script/1810"> Tests of eqlist3?</a>
-<a id="monscript1811" href="/script/1811"></a>
-<a id="monscript1812" href="/script/1812"> rember simplified, it now also works on s-expressions, not just atoms</a>
-<a id="monscript1813" href="/script/1813"> Example of rember</a>
-<a id="monscript1814" href="/script/1814"> http://www.catonmat.net</a>
-<a id="monscript1815" href="/script/1815"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript1816" href="/script/1816"> We'll need atom?</a>
-<a id="monscript1817" href="/script/1817"> Here are some entry examples.</a>
-<a id="monscript1818" href="/script/1818"> Test it out and build the example entries above</a>
-<a id="monscript1819" href="/script/1819"> We'll need first and second functions from chapter 7</a>
-<a id="monscript1820" href="/script/1820"> And also third, later.</a>
-<a id="monscript1821" href="/script/1821">      name</a>
-<a id="monscript1822" href="/script/1822">          name</a>
-<a id="monscript1823" href="/script/1823">  'entree</a>
-<a id="monscript1824" href="/script/1824">  'no-such-item</a>
-<a id="monscript1825" href="/script/1825"> examples.</a>
-<a id="monscript1826" href="/script/1826"> table</a>
-<a id="monscript1827" href="/script/1827">              name</a>
-<a id="monscript1828" href="/script/1828">  'beverage</a>
-<a id="monscript1829" href="/script/1829"> Expressions to actions</a>
-<a id="monscript1830" href="/script/1830"> Atom to action</a>
-<a id="monscript1831" href="/script/1831"> List to action</a>
-<a id="monscript1832" href="/script/1832"> The value function takes an expression and evaulates it</a>
-<a id="monscript1833" href="/script/1833"> The meaning function translates an expression to its meaning</a>
-<a id="monscript1834" href="/script/1834"> Now the various actions. Let's start with *const</a>
-<a id="monscript1835" href="/script/1835"> text-of</a>
-<a id="monscript1836" href="/script/1836"> *identifier</a>
-<a id="monscript1837" href="/script/1837"> initial-table</a>
-<a id="monscript1838" href="/script/1838"> *lambda</a>
-<a id="monscript1839" href="/script/1839"> Let's add helper functions</a>
-<a id="monscript1840" href="/script/1840"> cond takes lines, and returns the value for the first true line</a>
-<a id="monscript1841" href="/script/1841"> evcon needs else?, question-of and answer-of</a>
-<a id="monscript1842" href="/script/1842"> Now we can write the real *cond</a>
-<a id="monscript1843" href="/script/1843"> evlis finds meaning of arguments</a>
-<a id="monscript1844" href="/script/1844"> Finally the *application</a>
-<a id="monscript1845" href="/script/1845"> Is the function a primitive?</a>
-<a id="monscript1846" href="/script/1846"> Is the function a non-primitive?</a>
-<a id="monscript1847" href="/script/1847"> Apply!</a>
-<a id="monscript1848" href="/script/1848"> apply-primitive</a>
-<a id="monscript1849" href="/script/1849"> :atom?</a>
-<a id="monscript1850" href="/script/1850"> apply-closure</a>
-<a id="monscript1851" href="/script/1851"> Let's try out our brand new Scheme interpreter!</a>
-<a id="monscript1852" href="/script/1852"> http://www.catonmat.net</a>
-<a id="monscript1853" href="/script/1853">recursively.</a>
-<a id="monscript1854" href="/script/1854">If you're interested, get the book from Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript1855" href="/script/1855">His blog is at http://www.catonmat.net  --  good coders code, great reuse.</a>
-<a id="monscript1856" href="/script/1856">         10-value-of-all-of-this.ss</a>
-<a id="monscript1857" href="/script/1857">Tests include: null?, atom?, eq?.</a>
-<a id="monscript1858" href="/script/1858">It also defines five rules on using car, cdr, cons, null? and eq?.</a>
-<a id="monscript1859" href="/script/1859">                  Each must be a non-numeric atom.</a>
-<a id="monscript1860" href="/script/1860">|                                                                            |</a>
-<a id="monscript1861" href="/script/1861">again, and again until you understand recursion.</a>
-<a id="monscript1862" href="/script/1862">The first function introduced is lat? that tests if the given list consists</a>
-<a id="monscript1863" href="/script/1863">lat.</a>
-<a id="monscript1864" href="/script/1864">should be followed when programming recursively.</a>
-<a id="monscript1865" href="/script/1865">| Always ask null? as the first question in expressing any function.         |</a>
-<a id="monscript1866" href="/script/1866">commandment is presented.</a>
-<a id="monscript1867" href="/script/1867">| Use cons to build lists.                                                   |</a>
-<a id="monscript1868" href="/script/1868">the first occurrence of an element from a list.</a>
-<a id="monscript1869" href="/script/1869">| onto the natural recursion.                                                |</a>
-<a id="monscript1870" href="/script/1870">and a function that removes all occurrences of an element from a list.</a>
-<a id="monscript1871" href="/script/1871">| termination condition: when using cdr, test the termination with null?.    |</a>
-<a id="monscript1872" href="/script/1872">and exponentiation are written.</a>
-<a id="monscript1873" href="/script/1873">Along the way the first and fourth commandments are revisited:</a>
-<a id="monscript1874" href="/script/1874">| else.                                                                      |</a>
-<a id="monscript1875" href="/script/1875">| when using sub1, test termination with zero?.                              |</a>
-<a id="monscript1876" href="/script/1876">And the fifth commandment is postulated:</a>
-<a id="monscript1877" href="/script/1877">| terminating line.                                                          |</a>
-<a id="monscript1878" href="/script/1878">equals operation and quotient operation.</a>
-<a id="monscript1879" href="/script/1879">numeric elements from the list.</a>
-<a id="monscript1880" href="/script/1880">The first commandment is finalized:</a>
-<a id="monscript1881" href="/script/1881">| When recurring on a list of S-expressions, l, ask three questions about    |</a>
-<a id="monscript1882" href="/script/1882">And the fourth commandment is stated:</a>
-<a id="monscript1883" href="/script/1883">| * when using sub1, test termination with zero?.                            |</a>
-<a id="monscript1884" href="/script/1884">manipulate S-expressions and not just lists of atoms.</a>
-<a id="monscript1885" href="/script/1885">several times to teach you Scheme for great good.</a>
-<a id="monscript1886" href="/script/1886">Finally the sixth commandment is presented:</a>
-<a id="monscript1887" href="/script/1887">| Simplify only after the function is correct.                               |</a>
-<a id="monscript1888" href="/script/1888">only +, * and exp.</a>
-<a id="monscript1889" href="/script/1889">The seventh commandment is formulated as evaluator is developed:</a>
-<a id="monscript1890" href="/script/1890">| * On the subexpressions of an arithmetic expression.                       |</a>
-<a id="monscript1891" href="/script/1891">Next different representations for arithmetic expressions are introduced. An</a>
-<a id="monscript1892" href="/script/1892">commandment follows:</a>
-<a id="monscript1893" href="/script/1893">| Use help functions to abstract from representations.                       |</a>
-<a id="monscript1894" href="/script/1894">lat? function doesn't work on a list of these numbers.</a>
-<a id="monscript1895" href="/script/1895">intersect of a bunch of sets, to find union of two sets.</a>
-<a id="monscript1896" href="/script/1896">returns the first element of a pair, second that returns the second element of</a>
-<a id="monscript1897" href="/script/1897">function and is it a full function.</a>
-<a id="monscript1898" href="/script/1898">from functions. It also introduces currying.</a>
-<a id="monscript1899" href="/script/1899">simplifies the whole thing.</a>
-<a id="monscript1900" href="/script/1900">The ninth commandment follows.</a>
-<a id="monscript1901" href="/script/1901">| Abstract common patterns with a new function.                              |</a>
-<a id="monscript1902" href="/script/1902">wish with those two lists.</a>
-<a id="monscript1903" href="/script/1903">The final, tenth commandment, is stated.</a>
-<a id="monscript1904" href="/script/1904">| Build functions to collect more than one value at a time.                  |</a>
-<a id="monscript1905" href="/script/1905">And remember, an apple a day keeps the doctor away.</a>
-<a id="monscript1906" href="/script/1906">...</a>
-<a id="monscript1907" href="/script/1907">http://www.catonmat.net/blog/derivation-of-ycombinator/</a>
-<a id="monscript1908" href="/script/1908">...</a>
-<a id="monscript1909" href="/script/1909">It was a great adventure and now it's time for banquet!</a>
-<a id="monscript1910" href="/script/1910">Schemer" yourself! Go get it at http://bit.ly/4GjWdP, if you haven't already!</a>
-<a id="monscript1911" href="/script/1911">http://www.catonmat.net</a>
-<a id="monscript1912" href="/script/1912"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript1913" href="/script/1913"> given list.</a>
-<a id="monscript1914" href="/script/1914"> Examples of rember function</a>
-<a id="monscript1915" href="/script/1915"></a>
-<a id="monscript1916" href="/script/1916"> The firsts function builds a list of first s-expressions</a>
-<a id="monscript1917" href="/script/1917"> Examples of firsts</a>
-<a id="monscript1918" href="/script/1918"></a>
-<a id="monscript1919" href="/script/1919"> occurence of element old in the list lat</a>
-<a id="monscript1920" href="/script/1920">  'topping 'fudge</a>
-<a id="monscript1921" href="/script/1921">  'and</a>
-<a id="monscript1922" href="/script/1922">  'd</a>
-<a id="monscript1923" href="/script/1923"> occurrence of element old in the list lat</a>
-<a id="monscript1924" href="/script/1924">  'e</a>
-<a id="monscript1925" href="/script/1925"> in the list lat</a>
-<a id="monscript1926" href="/script/1926">  'fudge</a>
-<a id="monscript1927" href="/script/1927"></a>
-<a id="monscript1928" href="/script/1928"> with new in the list lat</a>
-<a id="monscript1929" href="/script/1929">  'banana</a>
-<a id="monscript1930" href="/script/1930"></a>
-<a id="monscript1931" href="/script/1931"> The multirember function removes all occurances of a from lat</a>
-<a id="monscript1932" href="/script/1932">  'cup</a>
-<a id="monscript1933" href="/script/1933"> occurences of element old in the list lat</a>
-<a id="monscript1934" href="/script/1934">  'a</a>
-<a id="monscript1935" href="/script/1935"> occurences of element old in the list lat</a>
-<a id="monscript1936" href="/script/1936">  'a</a>
-<a id="monscript1937" href="/script/1937"></a>
-<a id="monscript1938" href="/script/1938"> in the list lat</a>
-<a id="monscript1939" href="/script/1939">  'a</a>
-<a id="monscript1940" href="/script/1940"> http://www.catonmat.net</a>
-<a id="monscript1941" href="/script/1941"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript1942" href="/script/1942"> The atom? primitive</a>
-<a id="monscript1943" href="/script/1943"> and removes the element that test true</a>
-<a id="monscript1944" href="/script/1944"> Examples of rember-f</a>
-<a id="monscript1945" href="/script/1945"> takes an atom and tests if they are the same</a>
-<a id="monscript1946" href="/script/1946"> Example of eq?-c</a>
-<a id="monscript1947" href="/script/1947"> Examples of eq?-salad</a>
-<a id="monscript1948" href="/script/1948"> and removes the element from the list</a>
-<a id="monscript1949" href="/script/1949"> Test of rember-f</a>
-<a id="monscript1950" href="/script/1950"> Test curried function</a>
-<a id="monscript1951" href="/script/1951"> This time curried</a>
-<a id="monscript1952" href="/script/1952">  'e</a>
-<a id="monscript1953" href="/script/1953"> The insertR function, curried</a>
-<a id="monscript1954" href="/script/1954">  'd</a>
-<a id="monscript1955" href="/script/1955"> The seqL function is what insertL does that insertR doesn't</a>
-<a id="monscript1956" href="/script/1956"> The seqR function is what insertR does that insertL doesn't</a>
-<a id="monscript1957" href="/script/1957"> function passed to it</a>
-<a id="monscript1958" href="/script/1958">  'e</a>
-<a id="monscript1959" href="/script/1959">  'd</a>
-<a id="monscript1960" href="/script/1960"> insertL can also be defined by passing it a lambda</a>
-<a id="monscript1961" href="/script/1961">  'e</a>
-<a id="monscript1962" href="/script/1962"> The seqS function is what subst does that neither insertL nor insertR do</a>
-<a id="monscript1963" href="/script/1963">  'fudge</a>
-<a id="monscript1964" href="/script/1964"> Guess what yyy is</a>
-<a id="monscript1965" href="/script/1965"> yyy uses seqrem</a>
-<a id="monscript1966" href="/script/1966">  'sausage</a>
-<a id="monscript1967" href="/script/1967"></a>
-<a id="monscript1968" href="/script/1968"> Let's abstract it</a>
-<a id="monscript1969" href="/script/1969"> atom-to-function uses operator</a>
-<a id="monscript1970" href="/script/1970"> Example of atom-to-function</a>
-<a id="monscript1971" href="/script/1971"> The value function rewritten to use abstraction</a>
-<a id="monscript1972" href="/script/1972"> value uses 1st-sub-exp</a>
-<a id="monscript1973" href="/script/1973"> value uses 2nd-sub-exp</a>
-<a id="monscript1974" href="/script/1974"> Test value</a>
-<a id="monscript1975" href="/script/1975"> The multirember-f is multirember with a possibility to curry f</a>
-<a id="monscript1976" href="/script/1976"> Test multirember-f</a>
-<a id="monscript1977" href="/script/1977"> Curry multirember-f with eq?</a>
-<a id="monscript1978" href="/script/1978"> The multiremberT changes the way test works</a>
-<a id="monscript1979" href="/script/1979"> eq?-tuna tests if element is equal to 'tuna</a>
-<a id="monscript1980" href="/script/1980">  eq?-tuna</a>
-<a id="monscript1981" href="/script/1981"> The multiremember&co uses a collector</a>
-<a id="monscript1982" href="/script/1982"> The friendly function</a>
-<a id="monscript1983" href="/script/1983">  'tuna</a>
-<a id="monscript1984" href="/script/1984"> The new friend function</a>
-<a id="monscript1985" href="/script/1985">  'tuna</a>
-<a id="monscript1986" href="/script/1986"> The last friend function</a>
-<a id="monscript1987" href="/script/1987">  'tuna</a>
-<a id="monscript1988" href="/script/1988"></a>
-<a id="monscript1989" href="/script/1989"> The multiinsertLR inserts to the left and to the right of elements</a>
-<a id="monscript1990" href="/script/1990">  'b</a>
-<a id="monscript1991" href="/script/1991"> multiremember&co</a>
-<a id="monscript1992" href="/script/1992"> Some collectors</a>
-<a id="monscript1993" href="/script/1993">  'chips</a>
-<a id="monscript1994" href="/script/1994"> The evens-only* function leaves all even numbers in an sexpression</a>
-<a id="monscript1995" href="/script/1995"> Example of evens-only*</a>
-<a id="monscript1996" href="/script/1996"> and sum of odd numbers</a>
-<a id="monscript1997" href="/script/1997"> evens-friend returns collected evens</a>
-<a id="monscript1998" href="/script/1998"> Example of evens-friend used</a>
-<a id="monscript1999" href="/script/1999"> evens-product-friend returns the product of evens</a>
-<a id="monscript2000" href="/script/2000"> Example of evens-product-friend used</a>
-<a id="monscript2001" href="/script/2001"> evens-sum-friend returns the sum of odds</a>
-<a id="monscript2002" href="/script/2002"> Example of evens-sum-friend used</a>
-<a id="monscript2003" href="/script/2003"> the-last-friend returns sum, product and the list of evens consed together</a>
-<a id="monscript2004" href="/script/2004"> Example of the-last-friend</a>
-<a id="monscript2005" href="/script/2005"> http://www.catonmat.net</a>
-<a id="monscript2006" href="/script/2006"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript2007" href="/script/2007"> The atom? primitive</a>
-<a id="monscript2008" href="/script/2008"> The numbered? function determines whether a representation of an arithmetic</a>
-<a id="monscript2009" href="/script/2009"> Examples of numbered?</a>
-<a id="monscript2010" href="/script/2010"> Assuming aexp is a numeric expression, numbered? can be simplified</a>
-<a id="monscript2011" href="/script/2011"> Tests of numbered?</a>
-<a id="monscript2012" href="/script/2012"></a>
-<a id="monscript2013" href="/script/2013"> The value function determines the value of an arithmetic expression</a>
-<a id="monscript2014" href="/script/2014"> Examples of value</a>
-<a id="monscript2015" href="/script/2015"> The value function for prefix notation</a>
-<a id="monscript2016" href="/script/2016"> Examples of value-prefix</a>
-<a id="monscript2017" href="/script/2017"> These are for prefix notation.</a>
-<a id="monscript2018" href="/script/2018"> This is for prefix notation</a>
-<a id="monscript2019" href="/script/2019"> The new value function that uses helper functions</a>
-<a id="monscript2020" href="/script/2020"> Examples of value-prefix-helper</a>
-<a id="monscript2021" href="/script/2021"> Redefine helper functions for infix notation</a>
-<a id="monscript2022" href="/script/2022"> Examples of value-prefix-helper of infix notation expressions</a>
-<a id="monscript2023" href="/script/2023"></a>
-<a id="monscript2024" href="/script/2024"> A different number representation:</a>
-<a id="monscript2025" href="/script/2025"> sero? just like zero?</a>
-<a id="monscript2026" href="/script/2026"> edd1 just like add1</a>
-<a id="monscript2027" href="/script/2027"> zub1 just like sub1</a>
-<a id="monscript2028" href="/script/2028"> .+ just like o+</a>
-<a id="monscript2029" href="/script/2029"> Example of .+</a>
-<a id="monscript2030" href="/script/2030"> tat? just like lat?</a>
-<a id="monscript2031" href="/script/2031"> But does tat? work</a>
-<a id="monscript2032" href="/script/2032"> Beware of shadows.</a>
-<a id="monscript2033" href="/script/2033"> http://www.catonmat.net</a>
-<a id="monscript2034" href="/script/2034"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript2035" href="/script/2035"> Assume add1 is a primitive</a>
-<a id="monscript2036" href="/script/2036"> Example of add1</a>
-<a id="monscript2037" href="/script/2037"> Assume sub1 is a primitive</a>
-<a id="monscript2038" href="/script/2038"> Example of sub1</a>
-<a id="monscript2039" href="/script/2039"> Example of zero?</a>
-<a id="monscript2040" href="/script/2040"> The o+ function adds two numbers</a>
-<a id="monscript2041" href="/script/2041"> Example of o+</a>
-<a id="monscript2042" href="/script/2042"> The o- function subtracts one number from the other</a>
-<a id="monscript2043" href="/script/2043"> Example of o-</a>
-<a id="monscript2044" href="/script/2044"> Examples of not-tups</a>
-<a id="monscript2045" href="/script/2045"></a>
-<a id="monscript2046" href="/script/2046"> The addtup function adds all numbers in a tup</a>
-<a id="monscript2047" href="/script/2047"> Examples of addtup</a>
-<a id="monscript2048" href="/script/2048"> The o* function multiplies two numbers</a>
-<a id="monscript2049" href="/script/2049"></a>
-<a id="monscript2050" href="/script/2050"> Examples of o*</a>
-<a id="monscript2051" href="/script/2051"></a>
-<a id="monscript2052" href="/script/2052"> The tup+ function adds two tups</a>
-<a id="monscript2053" href="/script/2053"> Examples of tup+</a>
-<a id="monscript2054" href="/script/2054"> The o> function compares n with m and returns true if n>m</a>
-<a id="monscript2055" href="/script/2055"> Examples of o></a>
-<a id="monscript2056" href="/script/2056"> The o< function compares n with m and returns true if n<m</a>
-<a id="monscript2057" href="/script/2057"> Examples of o<</a>
-<a id="monscript2058" href="/script/2058"> The o= function compares n with m and returns true if n=m</a>
-<a id="monscript2059" href="/script/2059"> Examples of o=</a>
-<a id="monscript2060" href="/script/2060"> The o^ function computes n^m</a>
-<a id="monscript2061" href="/script/2061"> Examples of o^</a>
-<a id="monscript2062" href="/script/2062"> The o/ function computes the integer part of n/m</a>
-<a id="monscript2063" href="/script/2063"> Example of o/</a>
-<a id="monscript2064" href="/script/2064"></a>
-<a id="monscript2065" href="/script/2065"> The olength function finds the length of a lat</a>
-<a id="monscript2066" href="/script/2066"> Examples of length</a>
-<a id="monscript2067" href="/script/2067"> The pick function returns the n-th element in a lat</a>
-<a id="monscript2068" href="/script/2068"> Example of pick</a>
-<a id="monscript2069" href="/script/2069"> The rempick function removes the n-th element and returns the new lat</a>
-<a id="monscript2070" href="/script/2070"> Example of rempick</a>
-<a id="monscript2071" href="/script/2071"> The no-nums function returns a new lat with all numbers removed</a>
-<a id="monscript2072" href="/script/2072"> Example of no-nums</a>
-<a id="monscript2073" href="/script/2073"> only numbers</a>
-<a id="monscript2074" href="/script/2074"> Example of all-nums</a>
-<a id="monscript2075" href="/script/2075"> It uses eq? for atoms and = for numbers</a>
-<a id="monscript2076" href="/script/2076"> Examples of eqan?</a>
-<a id="monscript2077" href="/script/2077"> in a list</a>
-<a id="monscript2078" href="/script/2078"> Example of occur</a>
-<a id="monscript2079" href="/script/2079"> The one? function is true when n=1</a>
-<a id="monscript2080" href="/script/2080"> Example of one?</a>
-<a id="monscript2081" href="/script/2081"> We can rewrite rempick using one?</a>
-<a id="monscript2082" href="/script/2082"> Example of rempick-one</a>
-<a id="monscript2083" href="/script/2083"> http://www.catonmat.net</a>
-<a id="monscript2084" href="/script/2084"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript2085" href="/script/2085"> The pick function returns the n-th element in a lat</a>
-<a id="monscript2086" href="/script/2086"> Functions like looking are called partial functions.</a>
-<a id="monscript2087" href="/script/2087"> Example of looking</a>
-<a id="monscript2088" href="/script/2088"> It is truly unnatural.</a>
-<a id="monscript2089" href="/script/2089"> It is the most partial function.</a>
-<a id="monscript2090" href="/script/2090"> Helper functions for working with pairs</a>
-<a id="monscript2091" href="/script/2091"> into the second component</a>
-<a id="monscript2092" href="/script/2092"> Example of shift</a>
-<a id="monscript2093" href="/script/2093"> The a-pair? function determines if it's a pair</a>
-<a id="monscript2094" href="/script/2094"> We first need to define atom? for Scheme as it's not a primitive</a>
-<a id="monscript2095" href="/script/2095"> align is not a partial function, because it yields a value for every argument.</a>
-<a id="monscript2096" href="/script/2096"> counts the number of atoms in align's arguments</a>
-<a id="monscript2097" href="/script/2097"> Example of weight*</a>
-<a id="monscript2098" href="/script/2098"> Let's simplify revrel by using inventing revpair that reverses a pair</a>
-<a id="monscript2099" href="/script/2099"> Example of shuffle</a>
-<a id="monscript2100" href="/script/2100"> The one? function is true when n=1</a>
-<a id="monscript2101" href="/script/2101"> not total function</a>
-<a id="monscript2102" href="/script/2102"> Example of A</a>
-<a id="monscript2103" href="/script/2103"> length0</a>
-<a id="monscript2104" href="/script/2104"> length<=1</a>
-<a id="monscript2105" href="/script/2105"> Perhaps we should abstract out this function.</a>
-<a id="monscript2106" href="/script/2106"> rewrite length0</a>
-<a id="monscript2107" href="/script/2107"> rewrite length<=1</a>
-<a id="monscript2108" href="/script/2108"> make length</a>
-<a id="monscript2109" href="/script/2109"> rewrite length<=1</a>
-<a id="monscript2110" href="/script/2110"> 5</a>
-<a id="monscript2111" href="/script/2111"> move out length function</a>
-<a id="monscript2112" href="/script/2112"> Y</a>
-<a id="monscript2113" href="/script/2113"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
-<a id="monscript2114" href="/script/2114"> Example of a set</a>
-<a id="monscript2115" href="/script/2115"> Example of not a set</a>
-<a id="monscript2116" href="/script/2116"> The set? function determines if a given lat is a set</a>
-<a id="monscript2117" href="/script/2117"> Examples of set?</a>
-<a id="monscript2118" href="/script/2118"> The makeset funciton takes a lat and produces a set</a>
-<a id="monscript2119" href="/script/2119"> Example of makeset</a>
-<a id="monscript2120" href="/script/2120"> Test makeset</a>
-<a id="monscript2121" href="/script/2121"> The subset? function determines if set1 is a subset of set2</a>
-<a id="monscript2122" href="/script/2122"> Examples of subset?</a>
-<a id="monscript2123" href="/script/2123"> A shorter version of subset?</a>
-<a id="monscript2124" href="/script/2124"> Tests of the new subset?</a>
-<a id="monscript2125" href="/script/2125"> The eqset? function determines if two sets are equal</a>
-<a id="monscript2126" href="/script/2126"> Examples of eqset?</a>
-<a id="monscript2127" href="/script/2127"> The intersect? function finds if two sets intersect</a>
-<a id="monscript2128" href="/script/2128"> Examples of intersect?</a>
-<a id="monscript2129" href="/script/2129"> A shorter version of intersect?</a>
-<a id="monscript2130" href="/script/2130"> Tests of intersect?</a>
-<a id="monscript2131" href="/script/2131"> The intersect function finds the intersect between two sets</a>
-<a id="monscript2132" href="/script/2132"> Example of intersect</a>
-<a id="monscript2133" href="/script/2133"> The union function finds union of two sets</a>
-<a id="monscript2134" href="/script/2134"> Example of union</a>
-<a id="monscript2135" href="/script/2135"> The xxx function is the set difference function</a>
-<a id="monscript2136" href="/script/2136"> Example of set difference</a>
-<a id="monscript2137" href="/script/2137"> The intersectall function finds intersect between multitude of sets</a>
-<a id="monscript2138" href="/script/2138"> Examples of intersectall</a>
-<a id="monscript2139" href="/script/2139"> The a-pair? function determines if it's a pair</a>
-<a id="monscript2140" href="/script/2140"> Examples of pairs</a>
-<a id="monscript2141" href="/script/2141"> Examples of not-pairs</a>
-<a id="monscript2142" href="/script/2142"> Helper functions for working with pairs</a>
-<a id="monscript2143" href="/script/2143"> Just an example of how you'd write third</a>
-<a id="monscript2144" href="/script/2144"> Example of a not-relations</a>
-<a id="monscript2145" href="/script/2145"> Examples of relations</a>
-<a id="monscript2146" href="/script/2146"> The fun? function determines if rel is a function</a>
-<a id="monscript2147" href="/script/2147"> Examples of fun?</a>
-<a id="monscript2148" href="/script/2148"> The revrel function reverses a relation</a>
-<a id="monscript2149" href="/script/2149"> Example of revrel</a>
-<a id="monscript2150" href="/script/2150"> Let's simplify revrel by using inventing revpair that reverses a pair</a>
-<a id="monscript2151" href="/script/2151"> Simplified revrel</a>
-<a id="monscript2152" href="/script/2152"> Test of simplified revrel</a>
-<a id="monscript2153" href="/script/2153"> The fullfun? function determines if the given function is full</a>
-<a id="monscript2154" href="/script/2154"> It uses seconds helper function</a>
-<a id="monscript2155" href="/script/2155"> Examples of fullfun?</a>
-<a id="monscript2156" href="/script/2156"> one-to-one? is the same fullfun?</a>
-<a id="monscript2157" href="/script/2157"> http://www.catonmat.net</a></div>
+<a id="monscript2254" href="/script/2254"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2255" href="/script/2255"></a>
+<a id="monscript2256" href="/script/2256"> lat? function finds if all the elements in the list are atoms</a>
+<a id="monscript2257" href="/script/2257"> Examples of lats:</a>
+<a id="monscript2258" href="/script/2258"> Examples of not-lats:</a>
+<a id="monscript2259" href="/script/2259"> Examples of or:</a>
+<a id="monscript2260" href="/script/2260"></a>
+<a id="monscript2261" href="/script/2261"> Examples of member? succeeding</a>
+<a id="monscript2262" href="/script/2262"> Examples of member? failing</a>
+<a id="monscript2263" href="/script/2263"></a>
+<a id="monscript2264" href="/script/2264"> http://www.catonmat.net</a>
+<a id="monscript2265" href="/script/2265"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2266" href="/script/2266">'*abc$</a>
+<a id="monscript2267" href="/script/2267">'xyz</a>
+<a id="monscript2268" href="/script/2268"> Example of not-lists</a>
+<a id="monscript2269" href="/script/2269"> Example of not-atoms</a>
+<a id="monscript2270" href="/script/2270"> Examples of car</a>
+<a id="monscript2271" href="/script/2271"> Examples of not-applicable car</a>
+<a id="monscript2272" href="/script/2272"></a>
+<a id="monscript2273" href="/script/2273"> More examples of car</a>
+<a id="monscript2274" href="/script/2274"> Examples of cdr</a>
+<a id="monscript2275" href="/script/2275"> Examples of not-applicable cdr</a>
+<a id="monscript2276" href="/script/2276"></a>
+<a id="monscript2277" href="/script/2277"> Examples of car and cdr</a>
+<a id="monscript2278" href="/script/2278"> Examples of cons</a>
+<a id="monscript2279" href="/script/2279"> Examples of not-applicable cons</a>
+<a id="monscript2280" href="/script/2280"></a>
+<a id="monscript2281" href="/script/2281"> Examples of cons, car and cdr</a>
+<a id="monscript2282" href="/script/2282"> Example of the null-list</a>
+<a id="monscript2283" href="/script/2283"> Examples of null?</a>
+<a id="monscript2284" href="/script/2284"> Example of not-applicable null?</a>
+<a id="monscript2285" href="/script/2285"></a>
+<a id="monscript2286" href="/script/2286"> We first need to define atom? for Scheme as it's not a primitive</a>
+<a id="monscript2287" href="/script/2287"> Examples of atom?</a>
+<a id="monscript2288" href="/script/2288"> Examples of atom?, car and cdr</a>
+<a id="monscript2289" href="/script/2289"> Examples of eq?</a>
+<a id="monscript2290" href="/script/2290"> Example of not-applicable eq?</a>
+<a id="monscript2291" href="/script/2291"></a>
+<a id="monscript2292" href="/script/2292"> Examples of eq?, car and cdr</a>
+<a id="monscript2293" href="/script/2293"> Examples of not-applicable eq?, car and cdr</a>
+<a id="monscript2294" href="/script/2294"></a>
+<a id="monscript2295" href="/script/2295"> http://www.catonmat.net</a>
+<a id="monscript2296" href="/script/2296"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2297" href="/script/2297"> The atom? primitive</a>
+<a id="monscript2298" href="/script/2298"> The add1 primitive</a>
+<a id="monscript2299" href="/script/2299"> The rember* function removes all matching atoms from an s-expression</a>
+<a id="monscript2300" href="/script/2300">  'cup</a>
+<a id="monscript2301" href="/script/2301">  'sauce</a>
+<a id="monscript2302" href="/script/2302"> The insertR* function insers new to the right of all olds in l</a>
+<a id="monscript2303" href="/script/2303">  'chuck</a>
+<a id="monscript2304" href="/script/2304"></a>
+<a id="monscript2305" href="/script/2305"></a>
+<a id="monscript2306" href="/script/2306"> The occur* function counts the number of occurances of an atom in l</a>
+<a id="monscript2307" href="/script/2307">  'banana</a>
+<a id="monscript2308" href="/script/2308"> The subst* function substitutes all olds for news in l</a>
+<a id="monscript2309" href="/script/2309">  'banana</a>
+<a id="monscript2310" href="/script/2310"> The insertL* function insers new to the left of all olds in l</a>
+<a id="monscript2311" href="/script/2311">  'chuck</a>
+<a id="monscript2312" href="/script/2312"> The member* function determines if element is in a list l of s-exps</a>
+<a id="monscript2313" href="/script/2313">  'chips</a>
+<a id="monscript2314" href="/script/2314"> of S-expressions that doesn't contain the empty list</a>
+<a id="monscript2315" href="/script/2315"> Examples of leftmost</a>
+<a id="monscript2316" href="/script/2316"> Examples of not-applicable leftmost</a>
+<a id="monscript2317" href="/script/2317"> Or expressed via cond</a>
+<a id="monscript2318" href="/script/2318"> And expressed via cond</a>
+<a id="monscript2319" href="/script/2319">       case 3: l1 is a list, l2 is empty, atom, list</a>
+<a id="monscript2320" href="/script/2320"> Example of eqlist?</a>
+<a id="monscript2321" href="/script/2321">       case 3: l1 is a list, l2 is empty, atom, list</a>
+<a id="monscript2322" href="/script/2322"> Tests of eqlist2?</a>
+<a id="monscript2323" href="/script/2323"> The equal? function determines if two s-expressions are equal</a>
+<a id="monscript2324" href="/script/2324"> Examples of equal??</a>
+<a id="monscript2325" href="/script/2325"> equal? simplified</a>
+<a id="monscript2326" href="/script/2326"> Tests of equal2??</a>
+<a id="monscript2327" href="/script/2327"> eqlist? rewritten using equal2??</a>
+<a id="monscript2328" href="/script/2328"> Tests of eqlist3?</a>
+<a id="monscript2329" href="/script/2329"></a>
+<a id="monscript2330" href="/script/2330"> rember simplified, it now also works on s-expressions, not just atoms</a>
+<a id="monscript2331" href="/script/2331"> Example of rember</a>
+<a id="monscript2332" href="/script/2332"> http://www.catonmat.net</a>
+<a id="monscript2333" href="/script/2333"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2334" href="/script/2334"> We'll need atom?</a>
+<a id="monscript2335" href="/script/2335"> Here are some entry examples.</a>
+<a id="monscript2336" href="/script/2336"> Test it out and build the example entries above</a>
+<a id="monscript2337" href="/script/2337"> We'll need first and second functions from chapter 7</a>
+<a id="monscript2338" href="/script/2338"> And also third, later.</a>
+<a id="monscript2339" href="/script/2339">      name</a>
+<a id="monscript2340" href="/script/2340">          name</a>
+<a id="monscript2341" href="/script/2341">  'entree</a>
+<a id="monscript2342" href="/script/2342">  'no-such-item</a>
+<a id="monscript2343" href="/script/2343"> examples.</a>
+<a id="monscript2344" href="/script/2344"> table</a>
+<a id="monscript2345" href="/script/2345">              name</a>
+<a id="monscript2346" href="/script/2346">  'beverage</a>
+<a id="monscript2347" href="/script/2347"> Expressions to actions</a>
+<a id="monscript2348" href="/script/2348"> Atom to action</a>
+<a id="monscript2349" href="/script/2349"> List to action</a>
+<a id="monscript2350" href="/script/2350"> The value function takes an expression and evaulates it</a>
+<a id="monscript2351" href="/script/2351"> The meaning function translates an expression to its meaning</a>
+<a id="monscript2352" href="/script/2352"> Now the various actions. Let's start with *const</a>
+<a id="monscript2353" href="/script/2353"> text-of</a>
+<a id="monscript2354" href="/script/2354"> *identifier</a>
+<a id="monscript2355" href="/script/2355"> initial-table</a>
+<a id="monscript2356" href="/script/2356"> *lambda</a>
+<a id="monscript2357" href="/script/2357"> Let's add helper functions</a>
+<a id="monscript2358" href="/script/2358"> cond takes lines, and returns the value for the first true line</a>
+<a id="monscript2359" href="/script/2359"> evcon needs else?, question-of and answer-of</a>
+<a id="monscript2360" href="/script/2360"> Now we can write the real *cond</a>
+<a id="monscript2361" href="/script/2361"> evlis finds meaning of arguments</a>
+<a id="monscript2362" href="/script/2362"> Finally the *application</a>
+<a id="monscript2363" href="/script/2363"> Is the function a primitive?</a>
+<a id="monscript2364" href="/script/2364"> Is the function a non-primitive?</a>
+<a id="monscript2365" href="/script/2365"> Apply!</a>
+<a id="monscript2366" href="/script/2366"> apply-primitive</a>
+<a id="monscript2367" href="/script/2367"> :atom?</a>
+<a id="monscript2368" href="/script/2368"> apply-closure</a>
+<a id="monscript2369" href="/script/2369"> Let's try out our brand new Scheme interpreter!</a>
+<a id="monscript2370" href="/script/2370"> http://www.catonmat.net</a>
+<a id="monscript2371" href="/script/2371">recursively.</a>
+<a id="monscript2372" href="/script/2372">If you're interested, get the book from Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2373" href="/script/2373">His blog is at http://www.catonmat.net  --  good coders code, great reuse.</a>
+<a id="monscript2374" href="/script/2374">         10-value-of-all-of-this.ss</a>
+<a id="monscript2375" href="/script/2375">Tests include: null?, atom?, eq?.</a>
+<a id="monscript2376" href="/script/2376">It also defines five rules on using car, cdr, cons, null? and eq?.</a>
+<a id="monscript2377" href="/script/2377">                  Each must be a non-numeric atom.</a>
+<a id="monscript2378" href="/script/2378">|                                                                            |</a>
+<a id="monscript2379" href="/script/2379">again, and again until you understand recursion.</a>
+<a id="monscript2380" href="/script/2380">The first function introduced is lat? that tests if the given list consists</a>
+<a id="monscript2381" href="/script/2381">lat.</a>
+<a id="monscript2382" href="/script/2382">should be followed when programming recursively.</a>
+<a id="monscript2383" href="/script/2383">| Always ask null? as the first question in expressing any function.         |</a>
+<a id="monscript2384" href="/script/2384">commandment is presented.</a>
+<a id="monscript2385" href="/script/2385">| Use cons to build lists.                                                   |</a>
+<a id="monscript2386" href="/script/2386">the first occurrence of an element from a list.</a>
+<a id="monscript2387" href="/script/2387">| onto the natural recursion.                                                |</a>
+<a id="monscript2388" href="/script/2388">and a function that removes all occurrences of an element from a list.</a>
+<a id="monscript2389" href="/script/2389">| termination condition: when using cdr, test the termination with null?.    |</a>
+<a id="monscript2390" href="/script/2390">and exponentiation are written.</a>
+<a id="monscript2391" href="/script/2391">Along the way the first and fourth commandments are revisited:</a>
+<a id="monscript2392" href="/script/2392">| else.                                                                      |</a>
+<a id="monscript2393" href="/script/2393">| when using sub1, test termination with zero?.                              |</a>
+<a id="monscript2394" href="/script/2394">And the fifth commandment is postulated:</a>
+<a id="monscript2395" href="/script/2395">| terminating line.                                                          |</a>
+<a id="monscript2396" href="/script/2396">equals operation and quotient operation.</a>
+<a id="monscript2397" href="/script/2397">numeric elements from the list.</a>
+<a id="monscript2398" href="/script/2398">The first commandment is finalized:</a>
+<a id="monscript2399" href="/script/2399">| When recurring on a list of S-expressions, l, ask three questions about    |</a>
+<a id="monscript2400" href="/script/2400">And the fourth commandment is stated:</a>
+<a id="monscript2401" href="/script/2401">| * when using sub1, test termination with zero?.                            |</a>
+<a id="monscript2402" href="/script/2402">manipulate S-expressions and not just lists of atoms.</a>
+<a id="monscript2403" href="/script/2403">several times to teach you Scheme for great good.</a>
+<a id="monscript2404" href="/script/2404">Finally the sixth commandment is presented:</a>
+<a id="monscript2405" href="/script/2405">| Simplify only after the function is correct.                               |</a>
+<a id="monscript2406" href="/script/2406">only +, * and exp.</a>
+<a id="monscript2407" href="/script/2407">The seventh commandment is formulated as evaluator is developed:</a>
+<a id="monscript2408" href="/script/2408">| * On the subexpressions of an arithmetic expression.                       |</a>
+<a id="monscript2409" href="/script/2409">Next different representations for arithmetic expressions are introduced. An</a>
+<a id="monscript2410" href="/script/2410">commandment follows:</a>
+<a id="monscript2411" href="/script/2411">| Use help functions to abstract from representations.                       |</a>
+<a id="monscript2412" href="/script/2412">lat? function doesn't work on a list of these numbers.</a>
+<a id="monscript2413" href="/script/2413">intersect of a bunch of sets, to find union of two sets.</a>
+<a id="monscript2414" href="/script/2414">returns the first element of a pair, second that returns the second element of</a>
+<a id="monscript2415" href="/script/2415">function and is it a full function.</a>
+<a id="monscript2416" href="/script/2416">from functions. It also introduces currying.</a>
+<a id="monscript2417" href="/script/2417">simplifies the whole thing.</a>
+<a id="monscript2418" href="/script/2418">The ninth commandment follows.</a>
+<a id="monscript2419" href="/script/2419">| Abstract common patterns with a new function.                              |</a>
+<a id="monscript2420" href="/script/2420">wish with those two lists.</a>
+<a id="monscript2421" href="/script/2421">The final, tenth commandment, is stated.</a>
+<a id="monscript2422" href="/script/2422">| Build functions to collect more than one value at a time.                  |</a>
+<a id="monscript2423" href="/script/2423">And remember, an apple a day keeps the doctor away.</a>
+<a id="monscript2424" href="/script/2424">...</a>
+<a id="monscript2425" href="/script/2425">http://www.catonmat.net/blog/derivation-of-ycombinator/</a>
+<a id="monscript2426" href="/script/2426">...</a>
+<a id="monscript2427" href="/script/2427">It was a great adventure and now it's time for banquet!</a>
+<a id="monscript2428" href="/script/2428">Schemer" yourself! Go get it at http://bit.ly/4GjWdP, if you haven't already!</a>
+<a id="monscript2429" href="/script/2429">http://www.catonmat.net</a>
+<a id="monscript2430" href="/script/2430"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2431" href="/script/2431"> given list.</a>
+<a id="monscript2432" href="/script/2432"> Examples of rember function</a>
+<a id="monscript2433" href="/script/2433"></a>
+<a id="monscript2434" href="/script/2434"> The firsts function builds a list of first s-expressions</a>
+<a id="monscript2435" href="/script/2435"> Examples of firsts</a>
+<a id="monscript2436" href="/script/2436"></a>
+<a id="monscript2437" href="/script/2437"> occurence of element old in the list lat</a>
+<a id="monscript2438" href="/script/2438">  'topping 'fudge</a>
+<a id="monscript2439" href="/script/2439">  'and</a>
+<a id="monscript2440" href="/script/2440">  'd</a>
+<a id="monscript2441" href="/script/2441"> occurrence of element old in the list lat</a>
+<a id="monscript2442" href="/script/2442">  'e</a>
+<a id="monscript2443" href="/script/2443"> in the list lat</a>
+<a id="monscript2444" href="/script/2444">  'fudge</a>
+<a id="monscript2445" href="/script/2445"></a>
+<a id="monscript2446" href="/script/2446"> with new in the list lat</a>
+<a id="monscript2447" href="/script/2447">  'banana</a>
+<a id="monscript2448" href="/script/2448"></a>
+<a id="monscript2449" href="/script/2449"> The multirember function removes all occurances of a from lat</a>
+<a id="monscript2450" href="/script/2450">  'cup</a>
+<a id="monscript2451" href="/script/2451"> occurences of element old in the list lat</a>
+<a id="monscript2452" href="/script/2452">  'a</a>
+<a id="monscript2453" href="/script/2453"> occurences of element old in the list lat</a>
+<a id="monscript2454" href="/script/2454">  'a</a>
+<a id="monscript2455" href="/script/2455"></a>
+<a id="monscript2456" href="/script/2456"> in the list lat</a>
+<a id="monscript2457" href="/script/2457">  'a</a>
+<a id="monscript2458" href="/script/2458"> http://www.catonmat.net</a>
+<a id="monscript2459" href="/script/2459"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2460" href="/script/2460"> The atom? primitive</a>
+<a id="monscript2461" href="/script/2461"> and removes the element that test true</a>
+<a id="monscript2462" href="/script/2462"> Examples of rember-f</a>
+<a id="monscript2463" href="/script/2463"> takes an atom and tests if they are the same</a>
+<a id="monscript2464" href="/script/2464"> Example of eq?-c</a>
+<a id="monscript2465" href="/script/2465"> Examples of eq?-salad</a>
+<a id="monscript2466" href="/script/2466"> and removes the element from the list</a>
+<a id="monscript2467" href="/script/2467"> Test of rember-f</a>
+<a id="monscript2468" href="/script/2468"> Test curried function</a>
+<a id="monscript2469" href="/script/2469"> This time curried</a>
+<a id="monscript2470" href="/script/2470">  'e</a>
+<a id="monscript2471" href="/script/2471"> The insertR function, curried</a>
+<a id="monscript2472" href="/script/2472">  'd</a>
+<a id="monscript2473" href="/script/2473"> The seqL function is what insertL does that insertR doesn't</a>
+<a id="monscript2474" href="/script/2474"> The seqR function is what insertR does that insertL doesn't</a>
+<a id="monscript2475" href="/script/2475"> function passed to it</a>
+<a id="monscript2476" href="/script/2476">  'e</a>
+<a id="monscript2477" href="/script/2477">  'd</a>
+<a id="monscript2478" href="/script/2478"> insertL can also be defined by passing it a lambda</a>
+<a id="monscript2479" href="/script/2479">  'e</a>
+<a id="monscript2480" href="/script/2480"> The seqS function is what subst does that neither insertL nor insertR do</a>
+<a id="monscript2481" href="/script/2481">  'fudge</a>
+<a id="monscript2482" href="/script/2482"> Guess what yyy is</a>
+<a id="monscript2483" href="/script/2483"> yyy uses seqrem</a>
+<a id="monscript2484" href="/script/2484">  'sausage</a>
+<a id="monscript2485" href="/script/2485"></a>
+<a id="monscript2486" href="/script/2486"> Let's abstract it</a>
+<a id="monscript2487" href="/script/2487"> atom-to-function uses operator</a>
+<a id="monscript2488" href="/script/2488"> Example of atom-to-function</a>
+<a id="monscript2489" href="/script/2489"> The value function rewritten to use abstraction</a>
+<a id="monscript2490" href="/script/2490"> value uses 1st-sub-exp</a>
+<a id="monscript2491" href="/script/2491"> value uses 2nd-sub-exp</a>
+<a id="monscript2492" href="/script/2492"> Test value</a>
+<a id="monscript2493" href="/script/2493"> The multirember-f is multirember with a possibility to curry f</a>
+<a id="monscript2494" href="/script/2494"> Test multirember-f</a>
+<a id="monscript2495" href="/script/2495"> Curry multirember-f with eq?</a>
+<a id="monscript2496" href="/script/2496"> The multiremberT changes the way test works</a>
+<a id="monscript2497" href="/script/2497"> eq?-tuna tests if element is equal to 'tuna</a>
+<a id="monscript2498" href="/script/2498">  eq?-tuna</a>
+<a id="monscript2499" href="/script/2499"> The multiremember&co uses a collector</a>
+<a id="monscript2500" href="/script/2500"> The friendly function</a>
+<a id="monscript2501" href="/script/2501">  'tuna</a>
+<a id="monscript2502" href="/script/2502"> The new friend function</a>
+<a id="monscript2503" href="/script/2503">  'tuna</a>
+<a id="monscript2504" href="/script/2504"> The last friend function</a>
+<a id="monscript2505" href="/script/2505">  'tuna</a>
+<a id="monscript2506" href="/script/2506"></a>
+<a id="monscript2507" href="/script/2507"> The multiinsertLR inserts to the left and to the right of elements</a>
+<a id="monscript2508" href="/script/2508">  'b</a>
+<a id="monscript2509" href="/script/2509"> multiremember&co</a>
+<a id="monscript2510" href="/script/2510"> Some collectors</a>
+<a id="monscript2511" href="/script/2511">  'chips</a>
+<a id="monscript2512" href="/script/2512"> The evens-only* function leaves all even numbers in an sexpression</a>
+<a id="monscript2513" href="/script/2513"> Example of evens-only*</a>
+<a id="monscript2514" href="/script/2514"> and sum of odd numbers</a>
+<a id="monscript2515" href="/script/2515"> evens-friend returns collected evens</a>
+<a id="monscript2516" href="/script/2516"> Example of evens-friend used</a>
+<a id="monscript2517" href="/script/2517"> evens-product-friend returns the product of evens</a>
+<a id="monscript2518" href="/script/2518"> Example of evens-product-friend used</a>
+<a id="monscript2519" href="/script/2519"> evens-sum-friend returns the sum of odds</a>
+<a id="monscript2520" href="/script/2520"> Example of evens-sum-friend used</a>
+<a id="monscript2521" href="/script/2521"> the-last-friend returns sum, product and the list of evens consed together</a>
+<a id="monscript2522" href="/script/2522"> Example of the-last-friend</a>
+<a id="monscript2523" href="/script/2523"> http://www.catonmat.net</a>
+<a id="monscript2524" href="/script/2524"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2525" href="/script/2525"> The atom? primitive</a>
+<a id="monscript2526" href="/script/2526"> The numbered? function determines whether a representation of an arithmetic</a>
+<a id="monscript2527" href="/script/2527"> Examples of numbered?</a>
+<a id="monscript2528" href="/script/2528"> Assuming aexp is a numeric expression, numbered? can be simplified</a>
+<a id="monscript2529" href="/script/2529"> Tests of numbered?</a>
+<a id="monscript2530" href="/script/2530"></a>
+<a id="monscript2531" href="/script/2531"> The value function determines the value of an arithmetic expression</a>
+<a id="monscript2532" href="/script/2532"> Examples of value</a>
+<a id="monscript2533" href="/script/2533"> The value function for prefix notation</a>
+<a id="monscript2534" href="/script/2534"> Examples of value-prefix</a>
+<a id="monscript2535" href="/script/2535"> These are for prefix notation.</a>
+<a id="monscript2536" href="/script/2536"> This is for prefix notation</a>
+<a id="monscript2537" href="/script/2537"> The new value function that uses helper functions</a>
+<a id="monscript2538" href="/script/2538"> Examples of value-prefix-helper</a>
+<a id="monscript2539" href="/script/2539"> Redefine helper functions for infix notation</a>
+<a id="monscript2540" href="/script/2540"> Examples of value-prefix-helper of infix notation expressions</a>
+<a id="monscript2541" href="/script/2541"></a>
+<a id="monscript2542" href="/script/2542"> A different number representation:</a>
+<a id="monscript2543" href="/script/2543"> sero? just like zero?</a>
+<a id="monscript2544" href="/script/2544"> edd1 just like add1</a>
+<a id="monscript2545" href="/script/2545"> zub1 just like sub1</a>
+<a id="monscript2546" href="/script/2546"> .+ just like o+</a>
+<a id="monscript2547" href="/script/2547"> Example of .+</a>
+<a id="monscript2548" href="/script/2548"> tat? just like lat?</a>
+<a id="monscript2549" href="/script/2549"> But does tat? work</a>
+<a id="monscript2550" href="/script/2550"> Beware of shadows.</a>
+<a id="monscript2551" href="/script/2551"> http://www.catonmat.net</a>
+<a id="monscript2552" href="/script/2552"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2553" href="/script/2553"> Assume add1 is a primitive</a>
+<a id="monscript2554" href="/script/2554"> Example of add1</a>
+<a id="monscript2555" href="/script/2555"> Assume sub1 is a primitive</a>
+<a id="monscript2556" href="/script/2556"> Example of sub1</a>
+<a id="monscript2557" href="/script/2557"> Example of zero?</a>
+<a id="monscript2558" href="/script/2558"> The o+ function adds two numbers</a>
+<a id="monscript2559" href="/script/2559"> Example of o+</a>
+<a id="monscript2560" href="/script/2560"> The o- function subtracts one number from the other</a>
+<a id="monscript2561" href="/script/2561"> Example of o-</a>
+<a id="monscript2562" href="/script/2562"> Examples of not-tups</a>
+<a id="monscript2563" href="/script/2563"></a>
+<a id="monscript2564" href="/script/2564"> The addtup function adds all numbers in a tup</a>
+<a id="monscript2565" href="/script/2565"> Examples of addtup</a>
+<a id="monscript2566" href="/script/2566"> The o* function multiplies two numbers</a>
+<a id="monscript2567" href="/script/2567"></a>
+<a id="monscript2568" href="/script/2568"> Examples of o*</a>
+<a id="monscript2569" href="/script/2569"></a>
+<a id="monscript2570" href="/script/2570"> The tup+ function adds two tups</a>
+<a id="monscript2571" href="/script/2571"> Examples of tup+</a>
+<a id="monscript2572" href="/script/2572"> The o> function compares n with m and returns true if n>m</a>
+<a id="monscript2573" href="/script/2573"> Examples of o></a>
+<a id="monscript2574" href="/script/2574"> The o< function compares n with m and returns true if n<m</a>
+<a id="monscript2575" href="/script/2575"> Examples of o<</a>
+<a id="monscript2576" href="/script/2576"> The o= function compares n with m and returns true if n=m</a>
+<a id="monscript2577" href="/script/2577"> Examples of o=</a>
+<a id="monscript2578" href="/script/2578"> The o^ function computes n^m</a>
+<a id="monscript2579" href="/script/2579"> Examples of o^</a>
+<a id="monscript2580" href="/script/2580"> The o/ function computes the integer part of n/m</a>
+<a id="monscript2581" href="/script/2581"> Example of o/</a>
+<a id="monscript2582" href="/script/2582"></a>
+<a id="monscript2583" href="/script/2583"> The olength function finds the length of a lat</a>
+<a id="monscript2584" href="/script/2584"> Examples of length</a>
+<a id="monscript2585" href="/script/2585"> The pick function returns the n-th element in a lat</a>
+<a id="monscript2586" href="/script/2586"> Example of pick</a>
+<a id="monscript2587" href="/script/2587"> The rempick function removes the n-th element and returns the new lat</a>
+<a id="monscript2588" href="/script/2588"> Example of rempick</a>
+<a id="monscript2589" href="/script/2589"> The no-nums function returns a new lat with all numbers removed</a>
+<a id="monscript2590" href="/script/2590"> Example of no-nums</a>
+<a id="monscript2591" href="/script/2591"> only numbers</a>
+<a id="monscript2592" href="/script/2592"> Example of all-nums</a>
+<a id="monscript2593" href="/script/2593"> It uses eq? for atoms and = for numbers</a>
+<a id="monscript2594" href="/script/2594"> Examples of eqan?</a>
+<a id="monscript2595" href="/script/2595"> in a list</a>
+<a id="monscript2596" href="/script/2596"> Example of occur</a>
+<a id="monscript2597" href="/script/2597"> The one? function is true when n=1</a>
+<a id="monscript2598" href="/script/2598"> Example of one?</a>
+<a id="monscript2599" href="/script/2599"> We can rewrite rempick using one?</a>
+<a id="monscript2600" href="/script/2600"> Example of rempick-one</a>
+<a id="monscript2601" href="/script/2601"> http://www.catonmat.net</a>
+<a id="monscript2602" href="/script/2602"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2603" href="/script/2603"> The pick function returns the n-th element in a lat</a>
+<a id="monscript2604" href="/script/2604"> Functions like looking are called partial functions.</a>
+<a id="monscript2605" href="/script/2605"> Example of looking</a>
+<a id="monscript2606" href="/script/2606"> It is truly unnatural.</a>
+<a id="monscript2607" href="/script/2607"> It is the most partial function.</a>
+<a id="monscript2608" href="/script/2608"> Helper functions for working with pairs</a>
+<a id="monscript2609" href="/script/2609"> into the second component</a>
+<a id="monscript2610" href="/script/2610"> Example of shift</a>
+<a id="monscript2611" href="/script/2611"> The a-pair? function determines if it's a pair</a>
+<a id="monscript2612" href="/script/2612"> We first need to define atom? for Scheme as it's not a primitive</a>
+<a id="monscript2613" href="/script/2613"> align is not a partial function, because it yields a value for every argument.</a>
+<a id="monscript2614" href="/script/2614"> counts the number of atoms in align's arguments</a>
+<a id="monscript2615" href="/script/2615"> Example of weight*</a>
+<a id="monscript2616" href="/script/2616"> Let's simplify revrel by using inventing revpair that reverses a pair</a>
+<a id="monscript2617" href="/script/2617"> Example of shuffle</a>
+<a id="monscript2618" href="/script/2618"> The one? function is true when n=1</a>
+<a id="monscript2619" href="/script/2619"> not total function</a>
+<a id="monscript2620" href="/script/2620"> Example of A</a>
+<a id="monscript2621" href="/script/2621"> length0</a>
+<a id="monscript2622" href="/script/2622"> length<=1</a>
+<a id="monscript2623" href="/script/2623"> Perhaps we should abstract out this function.</a>
+<a id="monscript2624" href="/script/2624"> rewrite length0</a>
+<a id="monscript2625" href="/script/2625"> rewrite length<=1</a>
+<a id="monscript2626" href="/script/2626"> make length</a>
+<a id="monscript2627" href="/script/2627"> rewrite length<=1</a>
+<a id="monscript2628" href="/script/2628"> 5</a>
+<a id="monscript2629" href="/script/2629"> move out length function</a>
+<a id="monscript2630" href="/script/2630"> Y</a>
+<a id="monscript2631" href="/script/2631"> Get yourself this wonderful book at Amazon: http://bit.ly/4GjWdP</a>
+<a id="monscript2632" href="/script/2632"> Example of a set</a>
+<a id="monscript2633" href="/script/2633"> Example of not a set</a>
+<a id="monscript2634" href="/script/2634"> The set? function determines if a given lat is a set</a>
+<a id="monscript2635" href="/script/2635"> Examples of set?</a>
+<a id="monscript2636" href="/script/2636"> The makeset funciton takes a lat and produces a set</a>
+<a id="monscript2637" href="/script/2637"> Example of makeset</a>
+<a id="monscript2638" href="/script/2638"> Test makeset</a>
+<a id="monscript2639" href="/script/2639"> The subset? function determines if set1 is a subset of set2</a>
+<a id="monscript2640" href="/script/2640"> Examples of subset?</a>
+<a id="monscript2641" href="/script/2641"> A shorter version of subset?</a>
+<a id="monscript2642" href="/script/2642"> Tests of the new subset?</a>
+<a id="monscript2643" href="/script/2643"> The eqset? function determines if two sets are equal</a>
+<a id="monscript2644" href="/script/2644"> Examples of eqset?</a>
+<a id="monscript2645" href="/script/2645"> The intersect? function finds if two sets intersect</a>
+<a id="monscript2646" href="/script/2646"> Examples of intersect?</a>
+<a id="monscript2647" href="/script/2647"> A shorter version of intersect?</a>
+<a id="monscript2648" href="/script/2648"> Tests of intersect?</a>
+<a id="monscript2649" href="/script/2649"> The intersect function finds the intersect between two sets</a>
+<a id="monscript2650" href="/script/2650"> Example of intersect</a>
+<a id="monscript2651" href="/script/2651"> The union function finds union of two sets</a>
+<a id="monscript2652" href="/script/2652"> Example of union</a>
+<a id="monscript2653" href="/script/2653"> The xxx function is the set difference function</a>
+<a id="monscript2654" href="/script/2654"> Example of set difference</a>
+<a id="monscript2655" href="/script/2655"> The intersectall function finds intersect between multitude of sets</a>
+<a id="monscript2656" href="/script/2656"> Examples of intersectall</a>
+<a id="monscript2657" href="/script/2657"> The a-pair? function determines if it's a pair</a>
+<a id="monscript2658" href="/script/2658"> Examples of pairs</a>
+<a id="monscript2659" href="/script/2659"> Examples of not-pairs</a>
+<a id="monscript2660" href="/script/2660"> Helper functions for working with pairs</a>
+<a id="monscript2661" href="/script/2661"> Just an example of how you'd write third</a>
+<a id="monscript2662" href="/script/2662"> Example of a not-relations</a>
+<a id="monscript2663" href="/script/2663"> Examples of relations</a>
+<a id="monscript2664" href="/script/2664"> The fun? function determines if rel is a function</a>
+<a id="monscript2665" href="/script/2665"> Examples of fun?</a>
+<a id="monscript2666" href="/script/2666"> The revrel function reverses a relation</a>
+<a id="monscript2667" href="/script/2667"> Example of revrel</a>
+<a id="monscript2668" href="/script/2668"> Let's simplify revrel by using inventing revpair that reverses a pair</a>
+<a id="monscript2669" href="/script/2669"> Simplified revrel</a>
+<a id="monscript2670" href="/script/2670"> Test of simplified revrel</a>
+<a id="monscript2671" href="/script/2671"> The fullfun? function determines if the given function is full</a>
+<a id="monscript2672" href="/script/2672"> It uses seconds helper function</a>
+<a id="monscript2673" href="/script/2673"> Examples of fullfun?</a>
+<a id="monscript2674" href="/script/2674"> one-to-one? is the same fullfun?</a>
+<a id="monscript2675" href="/script/2675"> http://www.catonmat.net</a></div>

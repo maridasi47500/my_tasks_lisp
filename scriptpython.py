@@ -12,6 +12,8 @@ class Scriptpython:
         myprogram=""
         if matermin == "rb":
             myprogram="ruby"
+        if matermin == "scm":
+            myprogram="scheme < "
         if matermin == "cl":
             myprogram="sbcl --script "
         if matermin == "php":
@@ -19,7 +21,7 @@ class Scriptpython:
         if matermin == "py":
             myprogram="python3"
         wow=self.name.rfind("/")
-        monfichier=Fichier("./uploads","lancer_"+self.name.replace("/","").replace(".","")+".sh").ecrire("""xterm  -fa 'Monospace' -fs 20 -l -hold -e "cd {myroot}/uploads && echo \\\"c'est  mon script\\\" && bash -l -c \\\"{program} ./{name}\\\""
+        monfichier=Fichier("./uploads","lancer_"+self.name.replace("/","").replace(".","")+".sh").ecrire("""xterm  -fa 'Monospace' -fs 20 -l -hold -e "cd {myroot}/uploads && echo \\\"c'est  mon script\\\" && bash -l -c \\\"cat ./{name}; {program} ./{name}\\\""
                 """.format(myroot=os.getcwd(),name=self.name,program=myprogram))
         x=subprocess.check_output(["sh","./uploads/lancer_"+self.name.replace("/","").replace(".","")+".sh"])
 

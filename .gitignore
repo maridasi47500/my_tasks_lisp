@@ -34,3 +34,4 @@ pyneng.egg-info/*
 *.pyc
 *.swp
 uploads
+myFileDb.db
