@@ -56,6 +56,8 @@ return false;
 	return false;
   });
 	$('.home a').on('click', function () {
+		var mylink=$(this)[0];
+	    mylink.className="ok";
 var myid=$(this)[0].id.replace("monscript","");
 var formdata=new FormData();
 formdata.append("script_id",myid);
@@ -78,6 +80,7 @@ formdata.append("script_id",myid);
 	    console.log("HEY")
 	    console.log(JSON.stringify(data))
 	    console.log(JSON.stringify(data.redirect))
+
 },
 	  beforeSend: function(){
 		         $('.loader').show()
